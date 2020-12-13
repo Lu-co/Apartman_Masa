@@ -1,0 +1,507 @@
+body {
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #243238;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  letter-spacing: -.25px;
+  word-spacing: .65px;
+  /* width: 100%;
+  height: 100%; */
+}
+/******************common******************/
+h1,h2,h3,p,a{
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #484848;
+}
+/******************HEADER******************/
+.header-container {
+  /* width: 100%; */ 
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  display: flex;
+  /* justify-content: unset; */
+  /* align-items: revert; */
+  position: relative;
+  background-color: #F7F7F7;
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav ul li a {
+  color: #243238;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 5px 20px;
+}
+.navigation {
+  margin-left: auto;
+}
+
+
+
+.logo a{
+  display: block;
+}
+
+/******************HERO******************/
+
+.hero {
+  background: url(https://croatia.hr/sites/default/files/styles/image_full_width/public/beaches/plaza_jaz_2_foto_ivan_coric.jpg?itok=xoOWPVyg);
+  height: 500px;
+  background-size: cover;
+  background-position: top center;
+
+}
+
+.hero .container {
+  padding: 200px 0;
+}
+
+.hero h1 {
+  font-weight: 700;
+  line-height: 1.27;
+  font-size: 44px;
+  color: #fff;
+
+}
+.hero p{
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.27;
+  letter-spacing: -0.2px;
+  color: #fff;
+}
+
+/******************TEKST******************/
+
+/******************SLIKE******************/
+ .container{
+   margin: 0 auto;
+   padding: 0px 10px;
+    
+ }
+/******************O NAMA******************/
+
+/******************izleti******************/
+/* .trip-1 {
+  text-align: center;
+}
+
+.trip {
+  background-color: whitesmoke;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.trip-container {
+  padding: 10px;
+}
+
+.trip-container :hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+}
+
+.trip .e-mail {
+  width: 100px;
+  text-shadow: 0.2px 0.2px #000;
+  border-radius: 20px;
+  padding: 8px;
+  margin: 0 auto;
+  background-color: black;
+  color: #fff;
+} */
+
+.trip-container{
+  width: 100%;
+  height:500px;
+  background-color: #F7F7F7;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.izlet-conatiner{
+  text-align: center;
+  display: flex;
+  width: 1000px;
+  background-color:#ffff;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.izleti{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 15px 10px;
+  border: 1px solid #aeb1be;
+  border-radius: 6px;
+  text-align: left;
+  transition: .22s;
+  cursor: default;
+}
+
+.crta{
+  border-bottom:  0.2px solid #aeb1be ;
+  width: 50%;
+  display: block;
+ 
+
+}
+
+/****************** kraj izleti******************/
+
+.slika {
+  background-image: url(https://www.bluesunhotels.com/EasyEdit/UserFiles/PageImages/starigrad-paklenica/starigrad-paklenica-637090637091395495-4_1600_900.jpeg);
+  background-size: cover;
+  height: 500px;
+  padding: 10px;
+  background-position: center;
+
+}
+
+/******************CIJENE******************/
+
+/* .pricing-table {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+  color: #fff;
+  height: 320px;
+}
+.pricing-table:before,
+.pricing-table:after {
+  content: " ";
+  display: table;
+}
+.pricing-table:after {
+  clear: both;
+}
+.pricing-table {
+  *zoom: 1;
+}
+.pricing-table ul:first-child {
+  margin-left: 0;
+}
+.pricing-table ul li {
+  padding: 10px 20px;
+}
+.col-price {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 10px 1px;
+  position: relative;
+  display: block;
+  float: left;
+  background: whitesmoke;
+  transition: all 0.2s;
+}
+
+.col-price:hover {
+  box-shadow: 0 0 2px 2px #4e4e4e;
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1, 1.1);
+  z-index: 1001;
+  cursor: pointer;
+}
+.col-price li:nth-child(2n + 1) {
+  background: whitesmoke;
+  color: #000;
+}
+.col-price li:nth-child(2n) {
+  color: black;
+}
+
+.col-price .price span {
+  font-size: 25px;
+}
+
+.col-price li button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  box-shadow: 0 0 8px rgb(207, 207, 207);
+}
+
+.get-it :hover {
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: inset 1px 1px 4px #1193d4;
+  color: black;
+  text-transform: uppercase;
+  background-color: #fff;
+} */
+.cijene-container{
+  width:1000px;
+  text-align: center;
+  display: flex;
+  height:auto;
+  background-color:#fff;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.price{
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  
+}
+
+.cijene-container .cijene{
+  display: flex;
+  width: 25%;
+  height: auto;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid #aeb1be;
+}
+
+.cijene-lista li{
+  list-style: none;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+button{
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.286;
+    border: 1px solid #ff830a;
+    border-radius: 6px;
+    font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+
+.btn{
+  color: #fff;
+  background-color: #ff830a;
+  border-color: #ff830a;
+  margin: 5px;
+}
+
+
+/****************** KRAJ CIJENE******************/
+
+/******************  POCETAK FOOTER ******************/
+.footer-container {
+  background-color: #122e44 ;
+  border-top: 1px solid #DDDDDD;
+  margin: 0 auto;
+  width: 100%;
+  
+}
+.footer {
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.linkovi {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  
+}
+
+.linkovi p a{
+  color: #fff;
+}
+
+.footer h2{
+  color: #fff;
+}
+
+.footer p{
+  color: #fff;
+  font-weight: 400;
+}
+.footer h2{
+  margin-bottom: 0px;
+}
+
+.linkovi {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.footer a:hover {
+  color:#aeb1be;
+  text-decoration: none;
+  transition: 0.3 ease-out;
+}
+
+.footer a {
+  color:#fff;
+  text-decoration: none;
+}
+
+/****************** KRAJ FOOTER******************/
+
+/* // Extra small devices (portrait phones, less than 576px) 
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  .footer-container {
+    width: 100%;
+    display: inline-block;
+  }
+  .linkovi {
+    width: 20%;
+  }
+
+  .trip .e-mail {
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+ 
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container-price .price {
+    width: 49%;
+    display: inline-block;
+  }
+
+  .col-price {
+    width: 100%;
+  }
+
+  .trip .e-mail {
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .footer-container {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .linkovi {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+  .col-price {
+    width: 100%;
+  }
+
+  .trip .e-mail {
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .footer-container {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .linkovi {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+
+
+  
+
+  .container-price {
+    width: 1000px;
+  }
+  .container-price .price {
+    width: 23%;
+    display: inline-block;
+  }
+
+  .col-price {
+    width: 24%;
+    display: inline-block;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+  .trip .e-mail {
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
