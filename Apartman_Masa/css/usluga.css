@@ -3,6 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #243238;
+  background-color:#f7f7f7;
   font-family: Helvetica,Arial,sans-serif;
   font-size: 16px;
   letter-spacing: -.25px;
@@ -17,6 +18,9 @@ h1,h2,h3,p,a{
   line-height: 1.1;
   color: #484848;
 }
+
+
+
 /******************HEADER******************/
 .header-container {
   /* width: 100%; */ 
@@ -47,8 +51,6 @@ h1,h2,h3,p,a{
   margin-left: auto;
 }
 
-
-
 .logo a{
   display: block;
 }
@@ -56,113 +58,100 @@ h1,h2,h3,p,a{
 /******************HERO******************/
 
 .hero {
-  background: url(https://croatia.hr/sites/default/files/styles/image_full_width/public/beaches/plaza_jaz_2_foto_ivan_coric.jpg?itok=xoOWPVyg);
+  background: url(https://cf.bstatic.com/images/hotel/max1280x900/997/99760119.jpg);
   height: 500px;
   background-size: cover;
+  max-width: 2560px;
+  width: 100%;
   background-position: top center;
 
 }
 
-.hero .container {
-  padding: 200px 0;
-}
+
 
 .hero h1 {
   font-weight: 700;
   line-height: 1.27;
   font-size: 44px;
   color: #fff;
-
+  width: 100%;
+  display: inline-block;
+  margin-top: 15px;
+  
 }
+
 .hero p{
   font-size: 22px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+  font-weight: 300;
+  margin-bottom: -20px;
   line-height: 1.27;
-  letter-spacing: -0.2px;
   color: #fff;
-}
+  width: 94%;
+
+  }
+ 
+
+
 
 /******************TEKST******************/
-
-/******************SLIKE******************/
- .container{
-   margin: 0 auto;
-   padding: 0px 10px;
-    
- }
+  
 /******************O NAMA******************/
 
 /******************izleti******************/
-/* .trip-1 {
-  text-align: center;
-}
-
-.trip {
-  background-color: whitesmoke;
-  text-decoration: none;
-  border-radius: 10px;
-}
-.trip-container {
-  padding: 10px;
-}
-
-.trip-container :hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: black;
-}
-
-.trip .e-mail {
-  width: 100px;
-  text-shadow: 0.2px 0.2px #000;
-  border-radius: 20px;
-  padding: 8px;
-  margin: 0 auto;
-  background-color: black;
-  color: #fff;
-} */
-
 .trip-container{
   width: 100%;
-  height:500px;
-  background-color: #F7F7F7;
+  height:100%;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .izlet-conatiner{
   text-align: center;
-  display: flex;
-  width: 1000px;
-  background-color:#ffff;
+  display: grid;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  background-color:#f7f7f7;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
 
+  margin-bottom: 20px;
+ 
 }
 
 .izleti{
-  width: 100%;
+  width: 92%;
   position: relative;
   z-index: 1;
   padding: 15px 10px;
   border: 1px solid #aeb1be;
   border-radius: 6px;
   text-align: left;
+  margin: 5px;
   transition: .22s;
   cursor: default;
+}
+
+.izleti:focus, :hover{
+  border-color:#ff830a;
+  }
+  
+.izleti h3, p {
+  line-height: 1.5;
+  color: #74757f;
+  font-weight: 300;
+  letter-spacing: 0.3;
 }
 
 .crta{
   border-bottom:  0.2px solid #aeb1be ;
   width: 50%;
   display: block;
- 
-
 }
 
+.tekst-izleti{
+  height:200px;
+ 
+}
 /****************** kraj izleti******************/
 
 .slika {
@@ -175,127 +164,112 @@ h1,h2,h3,p,a{
 }
 
 /******************CIJENE******************/
-
-/* .pricing-table {
-  width: 100%;
-  margin: 10px 0;
-  text-align: center;
-  color: #fff;
-  height: 320px;
-}
-.pricing-table:before,
-.pricing-table:after {
-  content: " ";
-  display: table;
-}
-.pricing-table:after {
-  clear: both;
-}
-.pricing-table {
-  *zoom: 1;
-}
-.pricing-table ul:first-child {
-  margin-left: 0;
-}
-.pricing-table ul li {
-  padding: 10px 20px;
-}
-.col-price {
-  list-style: none;
-  width: 100%;
-  padding: 0;
-  margin: 10px 1px;
-  position: relative;
-  display: block;
-  float: left;
-  background: whitesmoke;
-  transition: all 0.2s;
-}
-
-.col-price:hover {
-  box-shadow: 0 0 2px 2px #4e4e4e;
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1, 1.1);
-  z-index: 1001;
-  cursor: pointer;
-}
-.col-price li:nth-child(2n + 1) {
-  background: whitesmoke;
-  color: #000;
-}
-.col-price li:nth-child(2n) {
-  color: black;
-}
-
-.col-price .price span {
-  font-size: 25px;
-}
-
-.col-price li button {
-  background-color: black;
-  color: #fff;
-  border: none;
-  border-radius: 15px;
-  padding: 8px;
-  box-shadow: 0 0 8px rgb(207, 207, 207);
-}
-
-.get-it :hover {
-  border: none;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: inset 1px 1px 4px #1193d4;
-  color: black;
-  text-transform: uppercase;
-  background-color: #fff;
-} */
-.cijene-container{
-  width:1000px;
-  text-align: center;
-  display: flex;
-  height:auto;
-  background-color:#fff;
+.pocetak-cijena{
   margin: 0 auto;
+  width: 100%;
+
+}
+.cijene-container{
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  display: grid;
+  height:auto;
+  background-color:#f7f7f7;
+  margin:0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.price{
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
-  
 }
 
 .cijene-container .cijene{
   display: flex;
-  width: 25%;
-  height: auto;
+  width: auto;
+  height: 300px;
   flex-direction: column;
   margin: 0 auto;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  text-align: center;
   border: 1px solid #aeb1be;
+
+}
+.price{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.cijene-container .cijene:hover, :focus{
+  border-color: #ff830a;
+}
+.cijene-lista{
+  width: 100px;
+  margin: 10px auto;
+  padding: 0px;
 }
 
 .cijene-lista li{
   list-style: none;
-  padding: 5px;
-  margin: 0 auto;
-  text-align: center;
+  padding: 2px;
+  line-height: 1.5;
+  color: #74757f;
+  font-weight: 300;
+  letter-spacing: 0.3;
+  text-align: left;
 
 }
 
+.cijene .btn{
+  width: 80%;
+  margin: 0px auto;
+}
+
+
+.cijene h3{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  width: 100px;
+  margin: 0 auto;
+  text-align: left;
+ 
+}
+
+.cijene p{
+  width: 100px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+
+
 button{
-    margin: 0 auto;
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 14px;
-    line-height: 1.286;
-    border: 1px solid #ff830a;
-    border-radius: 6px;
-    font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    width: 70%;
-    margin-bottom: 20px;
+  position: relative;
+  width: 150px;
+  height: auto;
+  padding: 14px 5px;
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.2;
+  border: 1px solid;
+  border-radius: 6px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  transition: 0.25s;
 }
 
 
@@ -303,8 +277,16 @@ button{
   color: #fff;
   background-color: #ff830a;
   border-color: #ff830a;
-  margin: 5px;
+
 }
+
+button:hover{
+  color: #fff;
+  background-color: #ff830a;
+  border-color: #ff830a;
+  text-transform: uppercase;
+}
+
 
 
 /****************** KRAJ CIJENE******************/
@@ -389,7 +371,17 @@ button{
     padding: 5px;
     margin-bottom: 10px;
   }
- 
+
+  .hero p{
+    text-align: left;
+  }
+
+  .tekst-izleti{
+    height: auto;
+  }
+
+
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -401,6 +393,7 @@ button{
 
   .col-price {
     width: 100%;
+  
   }
 
   .trip .e-mail {
@@ -431,7 +424,50 @@ button{
     display: flex;
     flex-direction: column;
   }
+  
+  .linkovi p{
+    margin-left:-1px;
+  }
+  .price{
+    width: 50%;
+  }
+  
+  .o-nama{
+    width: 100%;
+    padding-top: 120px;
+  }
+  
+  .cijene-container{
+    display: grid;
+   display: inline-block;
+
+  }
+
+  .hero h1,p {
+    margin-left: 20px;
+  }
+
+  .hero p{
+    width: 50%;
+   
+  }
+  .izleti h3, p{
+    margin-left: 10px;
+  }
+  .crta{
+    margin-left: 10px;
+  }
+
+  .tekst-izleti{
+    height:auto;
+  }
+ 
+  .cijene .btn{
+    width: 30%;
+  }
+ 
 }
+  
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -470,6 +506,37 @@ button{
     display: flex;
     flex-direction: column;
   }
+
+  .izlet-conatiner{
+    display: flex;
+  }
+  .price{
+    width: 50%;
+  }
+
+  .o-nama{
+    width: 100%;
+    padding-top: 160px;
+  }
+  .cijene-container{
+    display: flex;
+  }
+  .cijene-container .cijene{
+    width: 100%;
+  }
+ 
+  .hero h1,p {
+    margin-left: 20px;
+
+  }
+  .izleti h3, p{
+    margin-left: 10px;
+  }
+  .crta{
+    margin-left: 10px;
+  }
+
+  
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -477,9 +544,6 @@ button{
   .container {
     width: 1000px;
   }
-
-
-  
 
   .container-price {
     width: 1000px;
@@ -495,8 +559,31 @@ button{
   }
 
   .footer-container {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin: 0 auto;
     width: 100%;
   }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .linkovi {
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .linkovi h2{
+    margin-left:-2px;
+  }
+
   .trip .e-mail {
     margin: 0 auto;
     background-color: black;
@@ -504,4 +591,47 @@ button{
     padding: 5px;
     margin-bottom: 10px;
   }
+  .izlet-conatiner{
+    display: flex;
+  }
+ 
+
+  .price{
+    width: 50%;
+  }
+  
+  .o-nama{
+    width: 100%;
+    padding-top: 160px;
+  }
+
+  .cijene-container{
+    display: flex;
+  
+  }
+ 
+   .hero h1,p {
+     margin-left: 20px;
+  
+
+   }
+
+   .izleti h3, p{
+     margin-left: 10px;
+   }
+   .crta{
+     margin-left: 10px;
+   }
+   .hero{
+     background-position: top center;
+     height: 900px;
+   }
+
+   .tekst-izleti{
+    height: 200px;
+  }
+  .cijene .btn{
+    width: 50%;
+  }
+
 }

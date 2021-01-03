@@ -1,18 +1,25 @@
+
 body {
-    line-height: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #243238;
-    font-family: Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    letter-spacing: -.25px;
-    word-spacing: .65px;
-    /* width: 100%;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #243238;
+  background-color: #f7f7f7;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.25px;
+  word-spacing: 0.65px;
+  /* width: 100%;
     height: 100%; */
 }
 /******************common******************/
-h1,h2,h3,p,a{
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: #484848;
@@ -20,14 +27,14 @@ h1,h2,h3,p,a{
 
 /******************HEADER******************/
 .header-container {
-  /* width: 100%; */ 
+  /* width: 100%; */
   /* max-width: 1200px; */
   /* margin: 0 auto; */
   display: flex;
   /* justify-content: unset; */
   /* align-items: revert; */
   position: relative;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 5px 10px;
   border-bottom: 1px solid #eee;
 }
@@ -48,9 +55,7 @@ h1,h2,h3,p,a{
   margin-left: auto;
 }
 
-
-
-.logo a{
+.logo a {
   display: block;
 }
 
@@ -58,14 +63,10 @@ h1,h2,h3,p,a{
 
 .hero {
   background: url(https://croatia.hr/sites/default/files/styles/image_full_width/public/beaches/plaza_jaz_2_foto_ivan_coric.jpg?itok=xoOWPVyg);
-  height: auto;
+  height: 600px;
   background-size: cover;
-  background-position: top center;
+  width: 100%;
 
-}
-
-.hero .container {
-  padding:150px 0;
 }
 
 .hero h1 {
@@ -73,46 +74,42 @@ h1,h2,h3,p,a{
   line-height: 1.27;
   font-size: 44px;
   color: #fff;
-  margin-top: 150px;
-
-}
-.hero p{
-  font-size: 22px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.27;
-  letter-spacing: -0.2px;
+  width: 100%;
   text-align: left;
-  
+  padding: 15px;
+  display: inline-block;
+  margin-top: 25px;
+}
+.hero p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.27;
+  margin-top: 100px;
   color: #fff;
+  width: 94%;
+
+
 }
 
 /******************TEKST******************/
- .tekst{
-  text-align: left;
-  margin-left: 20px;
-  width: 50%;
 
- }
 
- #tekst{
-  text-align: left;
-  margin-left: 20px;
-
- }
 /******************SLIKE******************/
-.conatiner-slike{
-  background-color: #F7F7F7;
+.conatiner-slike {
+  background-color: #f7f7f7;
 }
 
-.container{
- margin: 0 auto;
- text-align: center;
-    
- }
- .gallery-container {
-  display: flex;
+.conatiner-slike p{
+  font-weight: 300;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.gallery-container {
+  display: grid;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #f7f7f7;
@@ -123,26 +120,21 @@ h1,h2,h3,p,a{
 .gallery-item {
   flex-basis: 32.7%;
   margin-bottom: 6px;
-  opacity: .85;
+  opacity: 0.85;
   cursor: pointer;
-
- 
 }
 .gallery-item:hover {
   opacity: 1;
- 
 }
 .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
- 
 }
 
-
 .gallery-content {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .lightbox {
@@ -150,7 +142,7 @@ h1,h2,h3,p,a{
   display: none;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: 100%;              
+  height: 100%;
   overflow: auto;
   top: 0;
   left: 0;
@@ -163,7 +155,7 @@ h1,h2,h3,p,a{
 }
 .lightbox-content img {
   border-radius: 7px;
-  box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
+  box-shadow: 0 0 3px 0 rgba(225, 225, 225, 0.25);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -185,113 +177,150 @@ h1,h2,h3,p,a{
 }
 .lightbox-prev:hover,
 .lightbox-next:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /******************SLIKE******************/
-
-
-/******************KONTAKT******************/
-.karta-kontakt{
+.slika-more {
   width: 100%;
-  display: flex;
-  color:#74757f;
-  background-color:#F7F7F7;
-  padding: 10px 10px;
-  margin: 0 auto;
+  background-image: url(https://livedemo00.template-help.com/wt_prod-20838/images/parallax-3.jpg);
+  height: auto;
+}
+
+.slika-more-tekst {
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.slika-more p {
+  color: #fff;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    height:auto;
+}
+
+button {
+  position: relative;
+  width: 150px ;
+  padding: 10px 5px;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid;
+  border-radius: 6px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 5px;
+  vertical-align: middle;
+  user-select: none;
+  transition: 0.25s;
+}
+
+.btn {
+  color: #fff;
+  background-color: #ff830a;
+  border-color: #ff830a;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.btn :hover,
+:focus {
+  text-decoration: none;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
 
 }
 
-.container .karta-kontakt .row{
+/******************KONTAKT FORMA******************/
+.karta-kontakt {
+  width: 100%;
+  display: grid;
+  color: #74757f;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+}
+
+.kontakt-forma {
   flex-direction: column;
   width: 100%;
-}
-
-.contact-text{
-  width: 100%;
-  margin: 0 auto ;
-}
-
-.contact-text hr{
-  border: 1.5px solid black;
-  clear: both;
-  display: block;
-  width: 85%;               
-  background-color:black;
-  height: 1px;
-}
-
-#mail-form .form-group label{
-  width: 50%;
-  display: inline-block;
-  margin-bottom: 5px;
+  max-width: 600px;
   text-align: left;
-  
-}
-#mail-form .form-group{
-  margin-bottom: 10px;
-}
-
-#mail-form .form-group .form-control{
-  display: block;
-  width: 50%;
-  height: calc(1.5em + .75rem + 8px);
-  padding: .375rem .75rem;
-  font-size: 13px;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
   font-weight: 300;
-  line-height: 1.5;
-  color: #495057;
-  margin: 0 auto;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  box-sizing: border-box;
+  color: #74757f;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  letter-spacing: 0.03em;
+  position: relative;
+  margin:20px auto;
 }
 
-#mail-form .btn{
-   display: inline-block;
-    padding: .8889rem 1.7778rem;
-    border-radius: 7px;
-    -webkit-box-shadow: 0 8px 23px rgba(81,114,221,.08);
-    box-shadow: 0 8px 23px rgba(81,114,221,.08);
-    -webkit-transition: all .2s cubic-bezier(.455,.03,.515,.955);
-    transition: all .2s cubic-bezier(.455,.03,.515,.955);
-    position: relative;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    width: 100%;
-    white-space: nowrap;
-    font-family: FSElliotBold,sans-serif;
-    font-weight: 700;
-    line-height: 1.3125;
-    font-size: .88889rem;
+.kontakt-forma .kontaktirajte-nas {
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  padding-left: 30px;
+}
+.conatiner-form-row .form-row {
+  position: relative;
+  margin: 30px;
 }
 
-#mail-form .btn.btn-primary{
-  color: #fff;
-  background-color:#122e44;
-  width: 30%;
+.conatiner-form-row .input-tekst {
+  display: block;
+  width: 80%;
+  height: 30px;
+  color: #74757f;
+  border-width: 0 0 1px 0px;
+  background-color: #f7f7f7;
+  border-color: #ff830a;
+  line-height: 2px;
+  overflow: hidden;
+}
+.conatiner-form-row .input-tekst:focus {
+  outline: none;
+}
+.conatiner-form-row .label {
+  position: absolute;
+
+  overflow: visible;
 }
 
-#mail-form .btn.btn-primary:hover, 
-#mail-form .btn.btn-primary:focus{
-    background-color: #263746;
-    -webkit-box-shadow: 2px 2px 16px 0 #a3b6c7;
-    box-shadow: 2px 2px 16px 0 #a3b6c7;
-}
-
-/******************KONTAKT******************/
+/******************KONTAKT FORMA******************/
 
 /******************KARTA******************/
-.karta{
+.karta {
+  display: flex;
   width: 100%;
-  margin-right: 20px;
- 
-  
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+.karta iframe{
+  width: 93%;
+  height: 370px;
 }
 /******************KARTA******************/
 
@@ -354,42 +383,41 @@ h1,h2,h3,p,a{
 
 /****************** KRAJ FOOTER******************/
 
-
-/* // Extra small devices (portrait phones, less than 576px) 
+/* // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
-
 
 @media (min-width: 576px) {
   .footer-container {
     width: 100%;
     display: inline-block;
-    text-align: left;
+  
   }
 
   .linkovi {
     width: 20%;
   }
 
- 
+  .btn{
+    margin: 10px 0px;
+  }
+
 }
- 
-   
+
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  
+  .gallery-container {
+    display: flex;
+  }
 
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  
-
-}
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
+  .karta-kontakt {
+    display: flex;
+  }
+  .hero p{
+    width: 50%;
+    margin-top: 70px;
+  }
   .footer-container {
     box-sizing: border-box;
     padding-bottom: 20px;
@@ -409,8 +437,94 @@ h1,h2,h3,p,a{
   .linkovi {
     display: flex;
     flex-direction: column;
-  
+  }
+
+  .hero p{
+    margin-top:120px;
+  }
+
+
+
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .gallery-container {
+    display: flex;
+  }
+  .karta-kontakt {
+    display: flex;
+  }
+  .footer-container {
+   
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .linkovi {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero p{
+    width: 50%;
+    margin-top: 100px;
   }
 
 
 }
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .footer-container {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .linkovi {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-container {
+    display: flex;
+  }
+  .karta-kontakt {
+    display: flex;
+  }
+
+  .hero p{
+    width: 50%;
+    margin-top: 300px;
+  }
+
+  .karta iframe{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .kontakt-forma{
+    width: 100%;
+    margin-left: 100px;
+
+  }
+
+
+ }
